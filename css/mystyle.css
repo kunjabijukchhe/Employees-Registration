@@ -1,0 +1,49 @@
+
+body{
+  background: url('https://cdn.iveybusinessjournal.com/wp-content/uploads/2006/03/iStock_000012204568_Large.jpg') fixed;
+
+  background-size: cover;
+
+}
+
+table,th,td,tr{
+  /* border: 2px solid black; */  background-color: #f2f2f2;
+}
+
+
+*[role="form"] {
+    max-width: 500px;
+    padding: 15px;
+    margin-left: 0 auto;
+    border-radius: 0.3em;
+    background-color: #f2f2f2;
+}
+
+*[role="form"] h2 {
+    font-family: 'Cantarell' , sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 32px;
+    font-family: 'Cantarell', sans-serif;
+
+    color: crimson;
+}
+*[role="form"] h3 {
+    font-family: 'Cantarell' , sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    /* color: #000000; */
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 32px;
+
+    font-family: 'Cantarell', sans-serif;
+
+}
