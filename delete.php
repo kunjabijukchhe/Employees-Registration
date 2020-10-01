@@ -7,11 +7,11 @@ if (isset($_POST['yesBtn'])) {
     $flag = $db->remove($id);
 
     if ($flag) {
-        header("Location: http://localhost:8080/user/employee.php");
+        header("Location: http://localhost/user/employee.php");
     }
 }
 if (isset($_POST['noBtn'])) {
-    header("Location: http://localhost:8080/user/employee.php");
+    header("Location: http://localhost/user/employee.php");
 }
 
 $title = "Remove Employee";

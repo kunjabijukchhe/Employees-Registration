@@ -12,7 +12,7 @@ if(isset($_POST['loginBtn'])){
         if($password == "123"){
             session_start();
             $_SESSION['username'] = $username;
-            header("Location: http://localhost:8080/user/home.php");
+            header("Location: http://localhost/user/home.php");
         } else {
             $invalid = "Invalid Password!";
         }

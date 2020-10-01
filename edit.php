@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 
     if ($flag) {
 
-        header("Location: http://localhost:8080/user/employee.php");
+        header("Location: http://localhost/user/employee.php");
         $success = "User has been updated successfully!";
 
     } else {

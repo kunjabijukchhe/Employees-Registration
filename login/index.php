@@ -10,7 +10,7 @@ if(isset($_POST['loginBtn'])){
 
     $flag = $db->login($username, $password);
     if($flag){
-        header("Location: http://localhost:8080/user/login/home.php");
+        header("Location: http://localhost/user/login/home.php");
     } else {
         $message = "Username of password was incorrect!";
     }

@@ -2,7 +2,7 @@
 class DBConnect {
     private $db = NULL;
 
-    const DB_SERVER = "localhost:3307";
+    const DB_SERVER = "localhost";
     const DB_USER = "root";
     const DB_PASSWORD = "";
     const DB_NAME = "registration";
@@ -20,21 +20,21 @@ class DBConnect {
     public function auth(){
         session_start();
         if(! isset($_SESSION['username'])){
-            header("Location: http://localhost:8080/user");
+            header("Location: http://localhost/user");
         }
     }
 
     public function checkAuth(){
         session_start();
         if(isset($_SESSION['username'])){
-            header("Location: http://localhost:8080/user/home.php");
+            header("Location: http://localhost/user/home.php");
         }
     }
 
     public function logout(){
         session_start();
         session_destroy();
-        header("Location: http://localhost:8080/user");
+        header("Location: http://localhost/user");
     }
 
     public function addEmployee($username,$password,$firstName,$middleName,$lastName,$pcrNumber,$salary,$landline,$mobile,$doj){
@@ -81,15 +81,15 @@ class DBConnect {
     public function auth1(){
         session_start();
         if(! isset($_SESSION['username'])){
-            header("Location: http://localhost:8080/user/login/index.php");
-            // header("Location: http://localhost:8080/user");
+            header("Location: http://localhost/user/login/index.php");
+          
         }
     }
     public function authLogin1(){
         session_start();
         if(isset($_SESSION['username'])){
-            header("Location: http://localhost:8080/user/login/home.php");
-            // header("Location: http://localhost:8080/user/user_home.php");
+            header("Location: http://localhost/user/login/home.php");
+           
         }
     }
 
